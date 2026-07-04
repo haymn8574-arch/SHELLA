@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f6f5f0;
+  --fg: #101013;
+  --muted: #5a5a63;
+  --line: #111;
+  --neon: #1e6bff;
+  --card: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', 'Inter', sans-serif;
+  line-height: 1.55;
+}
+
+body {
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Archivo Black', 'Anton', Impact, system-ui, sans-serif;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  margin: 0 0 12px;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  margin-top: 48px;
+  border-top: 2px solid var(--line);
+  padding-top: 18px;
+}
+
+h3 {
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  margin-top: 28px;
+  color: var(--neon);
+}
+
+h4 {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-top: 20px;
+}
+
+p,
+li {
+  color: var(--fg);
+}
+
+small,
+.muted {
+  color: var(--muted);
+}
+
+.eyebrow {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--neon);
+}
+
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid var(--line);
+  font-family: ui-monospace, monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.neon {
+  color: var(--neon);
+}
